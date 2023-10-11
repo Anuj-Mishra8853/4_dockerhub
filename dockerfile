@@ -1,17 +1,17 @@
 # Use an official Ubuntu as the base image
 FROM ubuntu:20.04
 
-# Set environment variables (optional)
+# Set environment variables 
 ENV MY_ENV_VAR=example_value
 
-# Install software packages (example: installing a text editor)
+# Install software packages 
 RUN apt-get update 
 
-# Create a directory and add a sample file (optional)
+# Create a directory and add a sample file
 WORKDIR /app
 RUN echo "Hello, Docker!" > sample.txt
 
-# Expose a port (optional, for network services)
+# Expose a port 
 EXPOSE 80
 
 # Define a default command to run when the container starts
